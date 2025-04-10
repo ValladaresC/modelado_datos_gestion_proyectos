@@ -43,5 +43,28 @@
 
 ![image](https://github.com/user-attachments/assets/df657367-418e-4155-b4db-52107b9159ab)
 
+### El modelo físico se encuentra en la ruta MODELO TRANSACCIONAL/DDL/script_modelo_fisico.sql y la base de datos fue poblada con los datos que puede observar en la ruta MODELO TRANSACCIONAL/DML/script_insert_data.sql.
+
+## 4. Análisis de resultados obtenidos de las consultas:
+
+### Se realizaron una serie de consultas a la base de datos las cuales se pueden  observar en la ruta MODELO TRANSACCIONAL/DML/script_consultas_data.sql.
+
+### Se observó que algunos proyectos, como la construcción del hospital y la maternidad, finalizaron con retrasos significativos, mientras que otros, como el urbanismo y los edificios, se completaron dentro del plazo previsto. Esto refleja una variabilidad en la gestión del tiempo en los proyectos, como se muestra en la consulta 4.
+
+### También, los ingresos totales de los proyectos finalizados son variados, siendo el hospital el que reportó los ingresos más altos (127,000) y la maternidad con los más bajos (96,000). Los proyectos en progreso también muestran ingresos significativos, según consulta 5.
+
+### En la consulta 6 se clasificaron las categorías de ingresos, mostrando que la categoría de "Alquiler" y "Recursos" son predominantes en varios proyectos. Esto es indicativo de cómo se están generando los ingresos a través de diversas fuentes. Por su parte la consulta 7 presenta un ranking de las categorías de gastos, donde se observa que los gastos en "Seguros" y "Gastos de Comunicación" son los más altos en algunos proyectos, lo que podría indicar áreas donde se podrían optimizar costos.
+
+### La comparación realizada en la consulta 8 muestra que todos los proyectos tienen márgenes de ganancia positivos, con el hospital y la escuela presentando los márgenes más altos. Esto sugiere una buena rentabilidad en los proyectos ejecutados.
+
+### La consulta 9 revela que existe una variación significativa entre el presupuesto asignado y los gastos reales, lo que podría ser una señal de una planificación deficiente o de gastos imprevistos en algunos proyectos (Consulta 10).
+
+### La consulta 11 muestra un patrón de gastos e ingresos a lo largo de los meses de 2023 y 2024, con picos en ingresos en meses específicos (por ejemplo, diciembre de 2023). Esto puede ayudar en la planificación financiera futura.
+
+### Finalmente, en la consulta 12 se evalúa el Valor Actual Neto (VPN), Tasa Interna de Retorno (TIR) y Retorno de Inversión (ROI) de cada proyecto, donde se observa que el viaducto tiene el VPN más alto, lo que indica que es el proyecto más rentable en términos económicos.
+
+### El análisis general muestra que, a pesar de algunos retrasos y variaciones en la ejecución de los proyectos, la mayoría de ellos son rentables y están generando ingresos significativos. La gestión del tiempo y de los costos es un aspecto a mejorar, especialmente en proyectos que aún están en progreso. Las variaciones presupuestarias también sugieren la necesidad de una mejor planificación y control financiero para futuros proyectos.
+
+
 
 
