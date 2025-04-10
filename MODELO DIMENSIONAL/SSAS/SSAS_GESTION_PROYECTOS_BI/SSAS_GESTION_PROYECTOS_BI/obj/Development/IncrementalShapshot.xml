@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_GESTION_PROYECTOS_BI</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>yJ7OSe7D79cA1IRbCkVySzENqMA=9/4/2025 11:06:23 p. m.9/4/2025 6:31:33 p. m.</TimeStamp>
+        <ID>
+          <String>Bd_Gestion_Proyectos_BI</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>fVohSoPo6DondVpWMrtHTijURIY=9/4/2025 8:41:20 p. m.9/4/2025 8:38:40 p. m.</TimeStamp>
+        <ID>
+          <String>BD_Gestion_Proyectos_BI</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>v5+EiBFeXvQ/3Wxe+DOTf41HHYM=9/4/2025 11:18:21 p. m.9/4/2025 6:42:06 p. m.</TimeStamp>
+        <ID>
+          <String>Dim Fecha</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PeWOimKZwQhu6f+EhBRcYYHKWHs=9/4/2025 11:15:33 p. m.9/4/2025 6:42:06 p. m.</TimeStamp>
+        <ID>
+          <String>Dim Proyectos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dB9lIZrk0ZfR43ItdOcYrIRVZnE=9/4/2025 11:15:33 p. m.9/4/2025 6:42:06 p. m.</TimeStamp>
+        <ID>
+          <String>Dim Categoria Gastos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sdehSpv08bhLpxEnYcpZ/2Qb5I0=9/4/2025 6:42:06 p. m.9/4/2025 6:42:06 p. m.</TimeStamp>
+        <ID>
+          <String>Fct Gastos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NlcK2Fe/TDIcRdgdttMxw2PUQsI=9/4/2025 8:41:20 p. m.9/4/2025 8:41:20 p. m.</TimeStamp>
+        <ID>
+          <String>Fct Presupuesto Planificado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>/8lzBxjL/WQepVxL2Evkm3xvnwY=9/4/2025 11:37:29 p. m.9/4/2025 8:41:20 p. m.DaDzBDGRC7pSYpHTFf0rz9Iq4a8=9/4/2025 8:41:20 p. m.9/4/2025 8:41:20 p. m.</TimeStamp>
+        <ID>
+          <String>BD_Gestion_Proyectos_BI</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>gdH2iCtZ/KNUQCvozeccRKobgts=9/4/2025 6:26:25 p. m.9/4/2025 6:26:25 p. m.</TimeStamp>
+      <ID>
+        <String>SSAS_GESTION_PROYECTOS_BI</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-04-10T19:38:48.273333Z</LastDeployed>
+</DeploymentSnapshot>
