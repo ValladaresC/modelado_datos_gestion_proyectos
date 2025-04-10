@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SSRS_GESTION_PROYECTOS_BI", "SSRS_GESTION_PROYECTOS_BI\SSRS_GESTION_PROYECTOS_BI.rptproj", "{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}.Debug|Default.Build.0 = ?|?
+		{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}.Debug|Default.Deploy.0 = ?|?
+		{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}.DebugLocal|Default.Build.0 = ?|?
+		{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}.Release|Default.Build.0 = ?|?
+		{01DA26D5-DB5B-5BF7-ED1A-26AA85E73093}.Release|Default.Deploy.0 = ?|?
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42B831EE-BB94-4F3E-8561-11CEEE5C841C}
+	EndGlobalSection
+EndGlobal
