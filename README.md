@@ -45,7 +45,7 @@
 
 ### El modelo físico se encuentra en la ruta MODELO TRANSACCIONAL/DDL/script_modelo_fisico.sql y la base de datos fue poblada con los datos que puede observar en la ruta MODELO TRANSACCIONAL/DML/script_insert_data.sql.
 
-## 3. Análisis de resultados obtenidos de las consultas:
+## 3. Análisis de resultados obtenidos de las consultas
 
 ### Se realizaron una serie de consultas a la base de datos las cuales se pueden  observar en la ruta MODELO TRANSACCIONAL/DML/script_consultas_data.sql.
 
