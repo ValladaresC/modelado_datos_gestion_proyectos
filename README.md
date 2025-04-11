@@ -73,20 +73,20 @@
 
 ### El modelo dimensional completo se podría visualizar de la siguiente manera:
 
-### - Dimensiones
+### - Dimensiones:
 
-### Localidad
-### Categoría de Ingresos
-### Categoría de Gastos
-### Proyecto
-### Fecha
+#### Localidad
+#### Categoría de Ingresos
+#### Categoría de Gastos
+#### Proyecto
+#### Fecha
 
-### - Hechos
+### - Hechos:
 
-### Ingresos
-### Gastos
-### Presupuesto Planificado
-### Métricas Financieras
+#### Ingresos
+#### Gastos
+#### Presupuesto Planificado
+#### Métricas Financieras
 
 ### Sin embargo el modelo dimensional de acuerdo a los requerimientos BI se enfocará en estudiar el presupuesto planificado y los gastos, quienes ser convertirán en tablas de hechos.
 
