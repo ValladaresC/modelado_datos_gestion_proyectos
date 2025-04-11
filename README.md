@@ -45,7 +45,7 @@
 
 ### El modelo físico se encuentra en la ruta MODELO TRANSACCIONAL/DDL/script_modelo_fisico.sql y la base de datos fue poblada con los datos que puede observar en la ruta MODELO TRANSACCIONAL/DML/script_insert_data.sql.
 
-## 4. Análisis de resultados obtenidos de las consultas:
+## 3. Análisis de resultados obtenidos de las consultas:
 
 ### Se realizaron una serie de consultas a la base de datos las cuales se pueden  observar en la ruta MODELO TRANSACCIONAL/DML/script_consultas_data.sql.
 
@@ -64,6 +64,63 @@
 ### Finalmente, en la consulta 12 se evalúa el Valor Actual Neto (VPN), Tasa Interna de Retorno (TIR) y Retorno de Inversión (ROI) de cada proyecto, donde se observa que el viaducto tiene el VPN más alto, lo que indica que es el proyecto más rentable en términos económicos.
 
 ### El análisis general muestra que, a pesar de algunos retrasos y variaciones en la ejecución de los proyectos, la mayoría de ellos son rentables y están generando ingresos significativos. La gestión del tiempo y de los costos es un aspecto a mejorar, especialmente en proyectos que aún están en progreso. Las variaciones presupuestarias también sugieren la necesidad de una mejor planificación y control financiero para futuros proyectos.
+
+### Se realizaron Stored Procedures los cuales puede observar en la ruta MODELO TRANSACCIONAL/DML/script_stored_procedures.sql.
+
+## 4. Modelo Dimensional
+
+### Es fundamental identificar las dimensiones y hechos que se utilizarán para el análisis. Un modelo dimensional típico incluye tablas de hechos (que contienen medidas numéricas) y tablas de dimensiones (que contienen información descriptiva sobre las medidas).
+
+### El modelo dimensional completo se podría visualizar de la siguiente manera:
+
+### - Dimensiones
+
+### Localidad
+### Categoría de Ingresos
+### Categoría de Gastos
+### Proyecto
+### Fecha
+
+### - Hechos
+
+### Ingresos
+### Gastos
+### Presupuesto Planificado
+### Métricas Financieras
+
+### Sin embargo el modelo dimensional de acuerdo a los requerimientos BI se enfocará en estudiar el presupuesto planificado y los gastos, quienes ser convertirán en tablas de hechos.
+
+## Modelo Lógico Dimensional
+
+![image](https://github.com/user-attachments/assets/c9488032-25f4-4e13-8571-aa0a30550af6)
+
+> [!IMPORTANT]
+> la dimensión fecha puede ser poblada con datos de alguna tabla de la BD tomando en consideración la fecha menor de todas las tablas. También se puede crear un archivo .txt y luego cargarlo en la dimensión fecha, también tomando en cuenta que las fechas deben comenzar con la fecha menor de todas las tablas que se van analizar. Otra opción es crear una tabla fecha sin relación en la BD tomando en consideración la misma premisa de la fecha menor y utilizarla cuando se requiera para poblar con datos la dimensión fecha del modelo BI.
+
+## Modelo Físico Dimensional
+
+![image](https://github.com/user-attachments/assets/38ad226e-423d-4533-8dd3-54ec9b15b3ea)
+
+### El modelo físico dimensional puede encontrarse en la ruta MODELO DIMENSIONAL/script_modelo_fisico_BI.sql.
+
+### Para aquellas personas que desean realizar Inteligencia de Negocios en programas como Power Bi, podrá encontrar un archivos de vistas generadas para poblar su modelo en la siguiente ruta MODELO DIMENSIONAL/script_vistas_mod_dimensional
+
+## 5. ETL con SQL Server Integration Services (SSIS)
+
+### Se realizó un carga de datos NO-INCREMENTAL por lo cual se dispuso de una tarea llamada 'Limpiar tablas y reiniciar ID' la cual usó en su SQL Statement el siguiente comando para reiniciar el ID en cada tabla, comenzando por las tablas de hechos.
+
+### DELETE FROM fct_gastos;
+### DBCC CHECKIDENT ('fct_gastos', RESEED, 0);
+
+### Se realizaron cuatro flujos de datos llamados 'Poblar tablas de dimensiones 1', 'Poblar tablas de dimensiones 2' y 'Poblar tabla de hechos 1' y 'Poblar tabla de hechos 2', mediante el cual se establecieron conexiones entre dos bases de datos de SQL Server: bd_gestion_proyectos como origen y bd_getion_proyectos_BI como destino, con el fin de poblar las tablas de dimensiones y hechos del modelo dimensional mediante comandos SQL presentes en el script de la ruta MODELO DIMENSIONAL/script_origen_poblar_modelo_BI.
+
+### En 'Poblar tablas de dimensiones 1' se poblaron tablas de dimensiones independientes o que no tienen llaves foráneas, como es el caso de Localidad, Categoria_Gasto y Fecha.
+
+### En 'Poblar tablas de dimensiones 2' se pobló la tabla dimensión Proyecto que tiene asociada la tabla de dimensión Localidad.
+
+### En 'Poblar tabla de hechos 1' se pobló la primera tabla de hechos Gastos la cual tiene asociada tres tablas de dimensiones (Proyecto, Categoria_Gasto y Fecha), insertándose 40 registros.
+
+### En 'Poblar tabla de hechos 2' se pobló la primera tabla de hechos Presupuesto_Planificado la cual tiene asociada dos tablas de dimensiones (Proyecto y Fecha), insertándose 40 registros.
 
 
 
