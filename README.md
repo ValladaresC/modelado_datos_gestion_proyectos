@@ -169,7 +169,15 @@
 
 ![image](https://github.com/user-attachments/assets/3aa72d39-74eb-415e-81c1-f6756e231f3b)
 
+### Se realizaron dos connsultas al cubo y en ambas se agregaron filtros de dimensión fecha y dimensión estado_proyecto y tambióen una medida calculada llamada resultado presupuestario que resulta de la resta de Gastos menos Presupuesto Planificado.
 
+### En la primera consulta se observa todos los proyectos con estado Finalizado
+
+![image](https://github.com/user-attachments/assets/90126b14-ba47-48b6-88f3-5eb51446d841)
+
+### En la segunda consulta se observa todos los proyectos con estado En Progreso
+
+![image](https://github.com/user-attachments/assets/4eb07b33-e190-469f-846c-3c8257db86d8)
 
 
 
