@@ -109,18 +109,38 @@
 
 ### Se realizó un carga de datos NO-INCREMENTAL por lo cual se dispuso de una tarea llamada 'Limpiar tablas y reiniciar ID' la cual usó en su SQL Statement el siguiente comando para reiniciar el ID en cada tabla, comenzando por las tablas de hechos.
 
-### DELETE FROM fct_gastos;
-### DBCC CHECKIDENT ('fct_gastos', RESEED, 0);
+#### DELETE FROM fct_gastos;
+#### DBCC CHECKIDENT ('fct_gastos', RESEED, 0);
 
 ### Se realizaron cuatro flujos de datos llamados 'Poblar tablas de dimensiones 1', 'Poblar tablas de dimensiones 2' y 'Poblar tabla de hechos 1' y 'Poblar tabla de hechos 2', mediante el cual se establecieron conexiones entre dos bases de datos de SQL Server: bd_gestion_proyectos como origen y bd_getion_proyectos_BI como destino, con el fin de poblar las tablas de dimensiones y hechos del modelo dimensional mediante comandos SQL presentes en el script de la ruta MODELO DIMENSIONAL/script_origen_poblar_modelo_BI.
 
+<p align="center">
+  <img width="460" height="600" src="https://github.com/user-attachments/assets/d6b6cb63-5de5-4049-bf93-fba0602bcfc6">
+</p>
+
 ### En 'Poblar tablas de dimensiones 1' se poblaron tablas de dimensiones independientes o que no tienen llaves foráneas, como es el caso de Localidad, Categoria_Gasto y Fecha.
+
+<p align="center">
+  <img width="460" height="350" src="https://github.com/user-attachments/assets/997caff0-e34e-4958-8b00-a5f3366ab24a">
+</p>
 
 ### En 'Poblar tablas de dimensiones 2' se pobló la tabla dimensión Proyecto que tiene asociada la tabla de dimensión Localidad.
 
+<p align="center">
+  <img width="460" height="600" src="https://github.com/user-attachments/assets/dc0b6080-1241-4aae-8d26-29b0074cf02f">
+</p>
+
 ### En 'Poblar tabla de hechos 1' se pobló la primera tabla de hechos Gastos la cual tiene asociada tres tablas de dimensiones (Proyecto, Categoria_Gasto y Fecha), insertándose 40 registros.
 
+<p align="center">
+  <img width="460" height="600" src="https://github.com/user-attachments/assets/28a2992f-3820-4f9c-b5c0-461d4b2b0bab">
+</p>
+
 ### En 'Poblar tabla de hechos 2' se pobló la primera tabla de hechos Presupuesto_Planificado la cual tiene asociada dos tablas de dimensiones (Proyecto y Fecha), insertándose 40 registros.
+
+<p align="center">
+  <img width="460" height="600" src="https://github.com/user-attachments/assets/328968e1-ea2d-45dc-9804-c46c6858c2f9">
+</p>
 
 
 
