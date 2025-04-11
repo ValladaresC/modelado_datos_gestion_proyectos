@@ -147,7 +147,7 @@
 ### Se creó un Job llamado ssis_gestion_proyectos_bi el cual fue programado para ejecutarse los días miércoles a las 05:30 p.m.
 
 <p align="center">
-  <img width="460" height="600" src="https://github.com/user-attachments/assets/6aaeac1b-854e-48d3-afd2-3caeac91385d">
+  <img width="550" height="600" src="https://github.com/user-attachments/assets/6aaeac1b-854e-48d3-afd2-3caeac91385d">
 </p>
 
 ### Resultado de la automatización
