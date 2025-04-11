@@ -179,6 +179,16 @@
 
 ![image](https://github.com/user-attachments/assets/4eb07b33-e190-469f-846c-3c8257db86d8)
 
+## 8. Reportes con SQL Server Reporting Services (SSRS)
 
+### Se realizó una solución llamada SSRS_GESTION_PROYECTOS_BI, la cual contiene el reporte Report_Gestion_Proyectos en la ventana de diseño
 
+![image](https://github.com/user-attachments/assets/19ee4999-5393-4d50-b0a8-90f1874f6b84)
 
+### Obteniendose el siguiente reporte en la pestaña de visualización
+
+![image](https://github.com/user-attachments/assets/b6806209-ecd7-49fc-b665-08194d4d533a)
+
+### Por último este reporte fue implementado para finalmente observarse en el navegador
+
+![image](https://github.com/user-attachments/assets/63f771be-d95c-4397-8158-4ea1e72f144f)
