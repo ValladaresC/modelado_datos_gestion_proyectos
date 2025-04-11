@@ -142,6 +142,35 @@
   <img width="460" height="600" src="https://github.com/user-attachments/assets/328968e1-ea2d-45dc-9804-c46c6858c2f9">
 </p>
 
+## 6. Automatización del proceso ETL (Implementación)
+
+### Se creó un Job llamado ssis_gestion_proyectos_bi el cual fue programado para ejecutarse los días miércoles a las 05:30 p.m.
+
+<p align="center">
+  <img width="460" height="600" src="https://github.com/user-attachments/assets/6aaeac1b-854e-48d3-afd2-3caeac91385d">
+</p>
+
+### Resultado de la automatización
+
+![image](https://github.com/user-attachments/assets/b26a930e-ab58-42f5-b0af-8b5aec5de1a5)
+
+## 7. Análisis Multidimensional con SQL Server Analysis Services (SSAS)
+
+### Fue realizado mediante SQL Server Analysis Services el cual permite el análisis de negocios como una plataforma OLAP.
+
+> [!NOTE]
+> Las empresas usan sistemas OLTP para capturar y administrar transacciones diarias en tiempo real, mientras que emplean sistemas OLAP para análisis de datos e informes.
+
+### Se creó una vista de origen de datos llamada BD_Gestion_Proyectos_BI
+
+![image](https://github.com/user-attachments/assets/8ebdb671-bc75-4c1f-a13f-f4ac9b8c4ed8)
+
+### Se creó un cubo OLAP llamado BD_Gestion_Proyectos_BI
+
+![image](https://github.com/user-attachments/assets/3aa72d39-74eb-415e-81c1-f6756e231f3b)
+
+
+
 
 
 
